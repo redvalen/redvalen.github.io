@@ -1,0 +1,271 @@
+/* Variáveis de cor */
+:root {
+  --cor-primaria: #fff; /* Branco */
+  --cor-secundaria: #8B0A1A; /* Vermelho escuro */
+  --cor-fundo: #f2f2f2; /* Branco suave */
+}
+
+/* Estilos globais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  transition: background-color 1s ease-in-out;
+}
+
+body:hover {
+  background-color: #fff;
+}
+
+#sobre {
+  background-color: #fff;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#sobre:hover {
+  background-color: #8B0A1A;
+}
+
+#habilidades {
+  background-color: #fff;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#habilidades:hover {
+  background-color: #8B0A1A;
+}
+
+#formacao {
+  background-color: #fff;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#formacao:hover {
+  background-color: #8B0A1A;
+}
+
+#contato {
+  background-color: #8B0A1A;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#contato:hover {
+  background-color: #fff;
+
+}
+
+body {
+  animation: mudar-cor 10s infinite;
+}
+
+@keyframes mudar-cor {
+  0% {
+    background-color: #700814;
+  }
+  50% {
+    background-color: #700814;
+  }
+  100% {
+    background-color: #8B0A1A;
+  }
+}
+
+
+/* Cabeçalho */
+header {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Links principais */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Seções */
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: var(--cor-primaria);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--cor-secundaria);
+}
+
+/* Animações */
+section {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Sobre Mim */
+#sobre {
+  display: flex;
+  align-items: center;
+}
+
+#sobre img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid var(--cor-secundaria);
+  transition: transform 0.3s ease-in-out;
+  color:#fff;
+}
+
+#sobre img:hover {
+  transform: scale(1.1);
+}
+/* Habilidades */
+#habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.habilidade {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: calc(33.33% - 20px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.habilidade:hover {
+  transform: scale(1.05);
+}
+
+.habilidade h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--cor-secundaria);
+}
+
+.habilidade ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.habilidade li {
+  margin-bottom: 10px;
+}
+/* Títulos de habilidades */
+.habilidade h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--cor-secundaria);
+  text-align: center;
+  border-bottom: 2px solid var(--cor-secundaria);
+  padding-bottom: 10px;
+}
+/* Contato */
+#contato {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contato h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--cor-secundaria);
+}
+
+#contato p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+#contato a {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#contato a:hover {
+  color: #333;
+}
+/* Formação Acadêmica */
+/* Formação Acadêmica */
+#formacao {
+  padding: 20px;
+}
+
+.formacao-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-left: 5px solid var(--cor-secundaria);
+  margin-bottom: 20px;
+}
+
+.formacao-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.formacao-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.formacao-item li {
+  margin-bottom: 10px;
+}
+
+footer{
+  text-align: center;
+  color:#fff
+}
