@@ -80,13 +80,15 @@ header {
   background-color: var(--cor-secundaria);
   color: var(--cor-primaria);
   padding: 20px;
-  text-align: center;
+  text-align:justify;
 }
 
 header h1 {
   font-size: 36px;
   margin-bottom: 10px;
+  text-align: center;
 }
+
 
 /* Links principais */
 nav ul {
@@ -95,6 +97,7 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: space-around;
+  text-align: center;
 }
 
 nav li {
