@@ -74,6 +74,38 @@ body {
   }
 }
 
+/* Estilo para todos os títulos principais (h2) */
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Estilo específico para a seção de habilidades (opcional) */
+#um {
+  /* Se quiser algo especial para esse título, adicione aqui */
+  /* Por exemplo:
+  color: #1abc9c;
+  text-transform: uppercase;
+  */
+}
+
+/* Estilo para listas dentro de .habilidade */
+.habilidade ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+/* Layout das seções */
+section {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+}
 
 /* Cabeçalho */
 header {
@@ -86,9 +118,8 @@ header {
 header h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  text-align: center;
+   text-align: center;
 }
-
 
 /* Links principais */
 nav ul {
@@ -168,7 +199,14 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
+.habilidades a {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--cor-secundaria);
+  text-align: center;
+  border-bottom: 2px solid var(--cor-secundaria);
+  padding-bottom: 10px;
+}
 .habilidade {
   margin: 20px;
   padding: 20px;
@@ -214,7 +252,7 @@ section {
   padding: 20px;
   text-align: center;
   background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  border: 1px solid #3b3737;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -239,7 +277,6 @@ section {
 #contato a:hover {
   color: #333;
 }
-/* Formação Acadêmica */
 /* Formação Acadêmica */
 #formacao {
   padding: 20px;
