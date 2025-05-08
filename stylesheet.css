@@ -117,14 +117,13 @@ section h2 {
 #sobre {
   display: flex;
   align-items: center;
+  border-radius: 10px;
 }
 
 #sobre img {
-  width: 150px;
+  width: 180px;
   height: 150px;
-  border-radius: 50%;
   margin-right: 20px;
-  border: 2px solid var(--cor-secundaria);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -137,6 +136,7 @@ section h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  border-radius: 10px;
 }
 
 .habilidade {
@@ -158,6 +158,7 @@ section h2 {
 /* Formação Acadêmica */
 #formacao {
   padding: 20px;
+  border-radius: 10px;
 }
 
 .formacao-item {
