@@ -13,19 +13,14 @@
 }
 
 body {
-  background-color: #fff;
-  transition: background-color 1s ease-in-out;
+  background-color: #1C1C1C;
   font-family: Arial, sans-serif;
-}
-
-body:hover {
-  background-color: #fff;
 }
 
 /* Cabeçalho */
 header {
-  background-color: var(--cor-secundaria);
-  color: var(--cor-primaria);
+  background-color: #1C1C1C;
+  color:red;
   padding: 20px;
   text-align:justify;
 }
@@ -117,14 +112,13 @@ section h2 {
 #sobre {
   display: flex;
   align-items: center;
+  border-radius: 10px;
 }
 
 #sobre img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-right: 20px;
-  border: 2px solid var(--cor-secundaria);
+  width: 200px;
+  height: 250px;
+  margin-right: 30px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -137,6 +131,12 @@ section h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  border-radius: 10px;
+
+}
+.sem-sublinhado {
+  text-decoration: none;
+  color:#8B0A1A; /* Cor do link */
 }
 
 .habilidade {
@@ -154,14 +154,27 @@ section h2 {
 .habilidade:hover {
   transform: scale(1.05);
 }
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .habilidade {
+    width: 100%;
+  }
+
+  #habilidades {
+    padding: 20px;
+    gap: 20px;
+  }
+}
 
 /* Formação Acadêmica */
 #formacao {
   padding: 20px;
+  border-radius: 10px;
+  background-color: #1C1C1C;
 }
 
 .formacao-item {
-  background-color: #f9f9f9;
+  background-color:#fff;
   padding: 20px;
   border-left: 5px solid var(--cor-secundaria);
   margin-bottom: 20px;
@@ -171,8 +184,8 @@ section h2 {
 #contato {
   padding: 20px;
   text-align: center;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color:#1C1C1C;
+  border: 1px solid #1C1C1C;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -216,7 +229,7 @@ footer {
   }
   
   #sobre img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
 }
